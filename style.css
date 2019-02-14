@@ -4,7 +4,7 @@ body {
     background-position: bottom, top;
     background-repeat: no-repeat;
     color: #fff;
-    background-size: 108%;
+    background-size: 116%;
     display: flex;
     flex-direction: column;
     font-family: 'Lato', sans-serif;
@@ -56,19 +56,17 @@ em {
 }
 
 p {
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, .2);
     padding:  16px 32px 16px 32px;
-    margin-top: -31px;
     letter-spacing: .5px;
     line-height: 1.5em;
-    transform: scale(.9);
+    margin: 0px;
     transition: all 1s;
     width: 60%;
 }
 
 .scrolled > p {
-    margin: 0px;
-    transform: scale(1);
+    background: rgba(0, 0, 0, .6);
 }
 
 @media only screen and (max-width: 1000px) {
