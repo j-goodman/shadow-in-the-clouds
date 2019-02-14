@@ -1,0 +1,81 @@
+body {
+    align-items: center;
+    background-image: url('luke.png'), url('vader.png'), linear-gradient(#000, #050000, #160800);
+    background-position: bottom, top;
+    background-repeat: no-repeat;
+    color: #fff;
+    background-size: 108%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    margin-top: 250px;
+    padding: 0;
+    transition: all 1s;
+}
+
+.scrolled {
+    background-size: 100%;
+}
+
+h2 {
+    border-top: 2px solid rgba(255, 255, 255, .4);
+    border-bottom: 2px solid rgba(255, 255, 255, .4);
+    font-family: 'Staatliches', sans-serif;
+    font-size: 2em;
+    margin-bottom: 10px;
+    opacity: .95;
+    padding: 0;
+    transition: all 1s;
+}
+
+.scrolled > h2 {
+    border-color: rgba(255, 0, 0, 0);
+    padding: 0 100px 0 100px;
+    opacity: .3;
+}
+
+h3 {
+    font-size: 1.3em;
+    margin-bottom: 80px;
+    opacity: .6;
+    text-align: center;
+    transform: scale(1);
+    transition: all 1s;
+    width: 30%;
+}
+
+.scrolled > h3 {
+  opacity: .3;
+}
+
+em {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 1.25em;
+    font-style: normal;
+}
+
+p {
+    background: rgba(0, 0, 0, .6);
+    padding:  16px 32px 16px 32px;
+    margin-top: -31px;
+    letter-spacing: .5px;
+    line-height: 1.5em;
+    transform: scale(.9);
+    transition: all 1s;
+    width: 60%;
+}
+
+.scrolled > p {
+    margin: 0px;
+    transform: scale(1);
+}
+
+@media only screen and (max-width: 1000px) {
+    h3  {
+        width: 70%
+    }
+    p {
+        width: 90%;
+    }
+}
